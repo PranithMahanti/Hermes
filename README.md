@@ -4,9 +4,10 @@ Hermes is terminal based messenger app utilising sockets and threading allowing 
 ## Context
 This project was developed as a fun project over my summer break, so that anyone at my university can have conversations over the Uni's network. 
 Working on Hermes has helped me learn more about:
-    - Communication Systems
-    - Network Architecture
-    - Socket Programming in Python
+- Communication Systems
+- Network Architecture
+- Threading in Python
+- Socket Programming in Python
 
 
 The naming was a pretty obvious choice. Hermes, the messenger of the Olympic gods.
