@@ -1,6 +1,7 @@
 import threading
 import socket
-
+import subprocess
+import re
 
 class Server:
     def __init__(self, host, port):
@@ -54,12 +55,16 @@ class Server:
             thread = threading.Thread(target=self.handle, args=(client,))
             thread.start()
 
+def get_ip():
+    result = subprocess.check_output("ipconfig /all", shell=True, text=True)
+    pattern = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
 
+    return pattern.search(result)[0]
 
 
 if __name__ == "__main__":
     hostname = socket.gethostname()
-    host = socket.gethostbyname(hostname)
+    host = get_ip()
     port = 47777
 
     print(f"Name: {hostname}\nIP Address: {host}")
