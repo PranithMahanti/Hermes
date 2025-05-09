@@ -31,7 +31,7 @@ class Client:
 
     def write(self):
         while True:
-            message = f"{self.nick}: {input("")}"
+            message = f"{self.nick}: {input('')}"
             self.client.send(message.encode('ascii'))
 
     def start(self):
