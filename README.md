@@ -12,9 +12,10 @@ Working on Hermes has helped me learn more about:
 The naming was a pretty obvious choice. Hermes, the messenger of the Olympic gods.
 
 ## How to use Hermes
-There are two main programs: 
-    1. The Server: server.py
-    2. The Client: client.py
+There are two main programs:
+1. The Server: ```server.py```
+2. The Client: ```client.py```
+
 ### The Server
 1. Run the ```server.py```
 
